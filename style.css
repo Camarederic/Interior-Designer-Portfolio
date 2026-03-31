@@ -494,6 +494,16 @@ html {
 .portfolio-header {
   text-align: center;
   margin-bottom: 20rem;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(5rem);
+  transition: all 1s;
+}
+
+.change .portfolio-header {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
 }
 
 .portfolio-header h3 {
@@ -520,6 +530,31 @@ html {
   display: flex;
   justify-content: space-evenly;
   margin: 15rem 0;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10rem);
+}
+
+.work:nth-child(1) {
+  transition: all 1s 0.5s;
+}
+
+.work:nth-child(2) {
+  transition: all 1s 1s;
+}
+
+.work:nth-child(3) {
+  transition: all 1s 2s;
+}
+
+.work:nth-child(4) {
+  transition: all 1s 3s;
+}
+
+.change .work {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
 }
 
 .work img {

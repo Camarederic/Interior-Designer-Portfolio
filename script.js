@@ -17,6 +17,7 @@ xBtn.addEventListener("click", () => {
 window.addEventListener("scroll", () => {
   const about = document.querySelector(".about");
   const services = document.querySelector(".services");
+  const portfolio = document.querySelector(".portfolio");
 
   if (window.pageYOffset >= 200) {
     about.classList.add("change");
@@ -28,6 +29,12 @@ window.addEventListener("scroll", () => {
     services.classList.add("change");
   } else {
     services.classList.remove("change");
+  }
+
+  if (window.pageYOffset >= services.offsetTop) {
+    portfolio.classList.add("change");
+  } else {
+    portfolio.classList.remove("change");
   }
 });
 // End of About
