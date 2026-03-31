@@ -411,6 +411,16 @@ html {
 
 .services-header {
   text-align: center;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(5rem);
+  transition: all 1s;
+}
+
+.change .services-header {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
 }
 
 .services-header h3 {
@@ -439,6 +449,27 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(5rem);
+}
+
+.list-item:nth-child(1) {
+  transition: all 1s 0.5s;
+}
+
+.list-item:nth-child(2) {
+  transition: all 1s 0.7s;
+}
+
+.list-item:nth-child(3) {
+  transition: all 1s 0.9s;
+}
+
+.change .list-item {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
 }
 
 .list-item i {

@@ -16,6 +16,7 @@ xBtn.addEventListener("click", () => {
 // About
 window.addEventListener("scroll", () => {
   const about = document.querySelector(".about");
+  const services = document.querySelector(".services");
 
   if (window.pageYOffset >= 200) {
     about.classList.add("change");
@@ -23,6 +24,10 @@ window.addEventListener("scroll", () => {
     about.classList.remove("change");
   }
 
-  console.log(window.pageYOffset);
+  if (window.pageYOffset >= about.offsetTop + 200) {
+    services.classList.add("change");
+  } else {
+    services.classList.remove("change");
+  }
 });
 // End of About
