@@ -3,7 +3,7 @@
 const menuIcon = document.querySelector(".menu-icon");
 const xBtn = document.querySelector(".x-btn");
 const navigation = document.querySelector(".navigation");
-const start = false;
+let start = false;
 
 menuIcon.addEventListener("click", () => {
   navigation.classList.add("navigate");
